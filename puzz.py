@@ -122,7 +122,8 @@ def generate_puzz(rows, cols):
         for p, k, t in zip(pcs, keys, types):
             p[k] = f'{t}-{p[k]}'
 
-
+    # return randomly shuffled puzz
+    random.shuffle(puzz)
     return puzz
 
 
