@@ -59,4 +59,6 @@ Write a program that reads in `problem.csv` and correctly determines the orienta
 
 See the problem and solution csvs in `examples/` for a simple 2x3 puzzle.
 
-This runs quick for small puzzles, but takes like 5 seconds to generate a 1000-piece puzzle. Could probably be optimized, and my code could probably be prettier.
+This runs quick for small puzzles, but takes like 5 seconds to generate a 1000-piece puzzle. Could probably be optimized, and my code could probably be prettier. In addition, the prime number multiplication to ensure edge id uniqueness might end up overflowing for really large puzzles.
+
+A hash function or something like [diffie-hellman](https://security.stackexchange.com/questions/45963/diffie-hellman-key-exchange-in-plain-english) key exchange for checking if edge pieces matched might have been a cooler way to make it less obvious which edge pieces match.
