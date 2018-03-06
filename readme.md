@@ -35,6 +35,8 @@ A `None` value of an edge corresponds to an actual edge piece of a puzzle.
 
 Edge ids are generated as the product of the (always prime) ids of the pieces they connect. Consequently, the example piece will have piece with `id = 7` on its bottom (east of the piece when taking its orientation into account), and piece with `id=11` on its left edge (south of the piece).
 
+This example piece is in the top left corner of the puzzle.
+
 ### orientation
 
 Orientations are simply the cardinal directions:
