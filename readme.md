@@ -27,16 +27,6 @@ Each piece contains information with unique edges and its orientation:
 }
 ```
 
-### edges
-
-An edge value of `tab-21` will match with another edge with value `blank-21`. [More on jigsaw puzzle terminology](https://english.stackexchange.com/a/47672).
-
-A `None` value of an edge corresponds to an actual edge piece of a puzzle.
-
-Edge ids are generated as the product of the (always prime) ids of the pieces they connect. Consequently, the example piece will have piece with `id = 7` on its bottom (east of the piece when taking its orientation into account), and piece with `id=11` on its left edge (south of the piece).
-
-This example piece is in the top left corner of the puzzle.
-
 ### orientation
 
 Orientations are simply the cardinal directions:
@@ -46,6 +36,19 @@ Orientations are simply the cardinal directions:
 ```
 
 The solution assumes the puzzle itself is oriented with its top edge facing north.
+
+If a piece has orientation `'W'`, its top edge is facing west.
+
+### edges
+
+An edge value of `tab-21` will match with another edge with value `blank-21`. [More on jigsaw puzzle terminology](https://english.stackexchange.com/a/47672).
+
+A `None` value of an edge corresponds to an actual edge piece of a puzzle.
+
+Edge ids are generated as the product of the (always prime) ids of the pieces they connect. Consequently, the example piece will have piece with `id=7` on its bottom (east of the piece when taking its orientation into account), and piece with `id=11` on its left edge (south of the piece).
+
+This example piece is in the top left corner of the puzzle.
+
 
 ## goal
 
